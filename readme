@@ -1,0 +1,56 @@
+Sistema de Monitoramento Ambiental com Arduino
+Descrição do Projeto
+Este projeto utiliza um microcontrolador Arduino para criar um sistema de monitoramento ambiental, que coleta dados de temperatura, umidade, distância e nível de óleo. Os dados são exibidos em um display LCD e podem ser controlados via controle remoto infravermelho (IR). Ideal para monitorar condições em aquários, sistemas de irrigação, reservatórios, entre outros.
+
+Funcionalidades
+Coleta de Dados Ambientais:
+
+Temperatura e Umidade: Medição com sensor DHT22.
+Distância: Medição com sensor ultrassônico.
+Nível de Óleo: Simulação com potenciômetro.
+Exibição de Dados:
+
+Display LCD exibe os dados alternando a cada 3 segundos.
+Controle manual via controle remoto IR para exibição de dados específicos.
+Controle Remoto IR:
+
+Botão 1: Exibir Temperatura.
+Botão 2: Exibir Umidade.
+Botão 3: Exibir Distância.
+Botão 4: Exibir Nível de Óleo.
+Outros Botões: Exibir instruções de uso.
+Lógica de Alternância:
+
+Alternância automática entre medições, com controle manual temporário.
+Requisitos e Dependências
+Hardware:
+
+Arduino (compatível com sensores listados)
+Sensor DHT22
+Sensor Ultrassônico HC-SR04
+Potenciômetro
+Display LCD 16x2
+Receptor IR e Controle Remoto IR
+Protoboard e Jumpers
+Bibliotecas:
+
+LiquidCrystal (controle do LCD)
+DHT (leitura do sensor DHT22)
+IRremote (comandos do controle IR)
+Instruções de Uso
+Montagem do Hardware:
+
+Conecte o sensor DHT22 ao Arduino (Data no Pino 2).
+Conecte o sensor ultrassônico HC-SR04 (Trigger no Pino 12, Echo no Pino 13).
+Conecte o potenciômetro ao Pino A0.
+Conecte o display LCD 16x2 (conforme esquema no arquivo).
+Conecte o receptor IR no Pino 11.
+Configuração do Software:
+
+Certifique-se de que as bibliotecas necessárias estão instaladas.
+Carregue o código no Arduino.
+Conclusão
+Este projeto oferece uma solução prática para monitoramento ambiental, com flexibilidade e facilidade de operação, graças à integração com controle remoto IR. Ele pode ser aplicado em diversos contextos, garantindo dados essenciais para manter a qualidade e segurança de diferentes ambientes.
+
+Link do Projeto no Wokwi
+https://wokwi.com/projects/399717965700460545
